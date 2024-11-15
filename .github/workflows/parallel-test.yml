@@ -2,7 +2,7 @@ name: Parallel Run (Register and Add to Cart Flows)
 # burada hangi durumda run olmasını istiyorsak onu ekliyoruz. Mesela aşağıda push olduğunda
 on: push
 jobs:
-  cypress-run:
+  Add-to-Cart-Flow-run:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
@@ -15,7 +15,7 @@ jobs:
            command: npm run test:addToCart
   
    # burada ismini değiştirebilirisin.
-  Register Flow-run:
+  RegisterFlow-run:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
