@@ -1,0 +1,21 @@
+{
+  "testData": {
+    "name": "Using fixtures to represent data",
+    "email": "test1234@email",
+    "body": "Fixtures are a great way to mock data for responses to routes"
+  },
+  "login": {
+    "name": "Duru",
+    "email": "test1234@email.com",
+    "password": "Test1234",
+    "product":"Mac Book",
+    "myAccountText":"h2"
+  },
+
+  "register":{
+    "firstName":"Duru Vildan",
+    "lastName":"Oruc",
+    "phoneNumber":"530 811 31 90",
+    "password":"Gulce"
+}
+}
