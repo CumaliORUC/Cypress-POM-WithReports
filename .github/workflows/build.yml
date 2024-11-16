@@ -11,6 +11,15 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
+      
+
+      - name: Cypress Test Report
+        uses: actions/upload-artifact@v4
+        with:
+         # give a name for test report for this job
+      - name: Mochawesome Test Report
+           # address the folder that report should be created => path/to/artifact
+          path: cypress/reports/html
 
 # SLACK NOTIFICATION IS BELOW ==============================
 
