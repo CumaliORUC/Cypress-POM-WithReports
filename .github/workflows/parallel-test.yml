@@ -39,6 +39,7 @@ jobs:
 
       # give a name for test report seciton
       - name: Cypress Test Report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
          # give a name for test report for this job
