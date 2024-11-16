@@ -13,7 +13,17 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
            command: npm run test:addToCart
-  
+     
+     # give a name for test report seciton
+     - name: Cypress Test Report
+       uses: actions/upload-artifact@v4
+       with:
+         # give a name for test report for this job
+          name: Mochawesome Test Report- Add to Cart
+           # address the folder that report should be created => path/to/artifact
+          path: cypress/reports/html
+
+   # ===================================Second job==============================================.
    # burada ismini değiştirebilirisin.
   RegisterFlow-run:
     runs-on: ubuntu-22.04
@@ -26,3 +36,12 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
            command: npm run test:registerFlow
+
+      # give a name for test report seciton
+      - name: Cypress Test Report
+        uses: actions/upload-artifact@v4
+        with:
+         # give a name for test report for this job
+          name: Mochawesome Test Report- Register Flow
+           # address the folder that report should be created => path/to/artifact
+          path: cypress/reports/html
