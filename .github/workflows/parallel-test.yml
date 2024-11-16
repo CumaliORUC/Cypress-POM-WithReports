@@ -2,7 +2,7 @@ name: Parallel Run (Register and Add to Cart Flows)
 # burada hangi durumda run olmasını istiyorsak onu ekliyoruz. Mesela aşağıda push olduğunda
 on: push
 jobs:
-  Add-to-Cart-Flow-run:
+  AddtoCartFlow-run:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
